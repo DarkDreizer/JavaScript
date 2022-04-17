@@ -3,9 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>JavaScript</title>
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    This is just an empty body
+    <form id="http-form" method="GET" action="www.google.com">
+      <div>
+        <label for="text-input">Text</label>
+        <input id="text-input" type="text" minlength="4" maxlength="6" placeholder="text example" required>
+      </div>
+      <div>
+        <label for="password-input">Password</label>
+        <input id="password-input" type="password" value="sasa" disabled>
+      </div>
+
+      <div>
+        <label for="checkbox-input">Checkbox</label>
+        <input id="checkbox-input" type="checkbox">
+      </div>
+
+      <div>
+        <label for="radio-input-yes">Radio (Si)</label>
+        <input id="radio-input-yes" name="ex-radio" type="radio" value="Si" checked>
+      </div>
+      <div>
+        <label for="radio-input-no">Radio (No)</label>
+        <input id="radio-input-no" name="ex-radio" type="radio" value="No">
+      </div>
+
+      <div>
+        <label for="file-input">File</label>
+        <input id="file-input" type="file">
+      </div>
+
+      <div>
+        <label for="text-area">Text Area</label>
+        <textarea id="text-area"></textarea>
+      </div>
+
+      <div>
+        <label for="select-options">Select</label>
+        <select id="select-options">
+          <optgroup label="Primeras">
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </optgroup>
+          <optgroup label="Segundas">
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </optgroup>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
